@@ -1,0 +1,16 @@
+@import 'global/styles/Styles.module.scss';
+
+.page {
+  display: flex;
+
+  margin: auto;
+  max-width: 160rem;
+  width: 100%;
+
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+  word-break: break-word;
+}

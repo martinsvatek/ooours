@@ -1,0 +1,65 @@
+@import 'global/styles/Styles.module.scss';
+
+.button {
+  display: flex;
+
+  z-index: 10;
+
+  border-radius: 2.4rem;
+  border: none;
+  height: 4.3rem;
+  outline: none;
+  width: 4.3rem;
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.defaultColor,
+.peachColor {
+  color: $color-grey-100;
+}
+
+.defaultColor {
+  border: 0.4rem solid $color-grey-300;
+
+  &:focus,
+  &:hover {
+    background-color: $color-grey-300;
+  }
+}
+
+.peachColor {
+  border: 0.4rem solid $color-peach-100;
+
+  &:focus,
+  &:hover {
+    background-color: $color-peach-100;
+  }
+}
+
+.disabled {
+  border: 0.4rem solid $color-grey-500;
+
+  color: $color-grey-400;
+
+  &:focus,
+  &:hover {
+    background-color: $color-grey-500;
+  }
+}

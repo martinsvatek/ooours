@@ -1,0 +1,105 @@
+@import 'global/styles/Styles.module.scss';
+
+html {
+  /* 10px = 1rem */
+  font-size: 62.5%;
+
+  /* remove blue tap highlight */
+  -webkit-tap-highlight-color: transparent;
+
+  background-color: $color-grey-600;
+}
+
+body {
+  display: flex;
+
+  margin: 1.6rem;
+
+  align-content: center;
+  flex-direction: column;
+
+  & a,
+  & button,
+  & div,
+  & h1,
+  & h2,
+  & h3,
+  & img,
+  & input,
+  & label,
+  & p,
+  & span,
+  & textarea {
+    box-sizing: border-box;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    white-space: pre-line;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & h1 {
+    margin: 4rem 2rem 1rem 2rem;
+
+    font-size: 8rem;
+  }
+
+  & h2 {
+    margin: 1.6rem 0.8rem 0.4rem 0.8rem;
+
+    font-size: 3.2rem;
+  }
+
+  & h2 {
+    margin: 1.2rem 0.6rem 0.4rem 0.6rem;
+
+    font-size: 2.4rem;
+  }
+
+  & a,
+  & button,
+  & h3,
+  & input,
+  & p,
+  & span,
+  & textarea {
+    margin: 1rem 0.5rem 0.4rem 0.5rem;
+
+    font-size: 2rem;
+  }
+
+  & a,
+  & h1,
+  & h2,
+  & h3 {
+    color: $color-grey-200;
+  }
+
+  & button,
+  & input,
+  & p,
+  & span,
+  & textarea {
+    color: $color-grey-300;
+  }
+
+  /* transition to all elements - good for theme toggle (doesn't contain :: pseudo) */
+  & * {
+    transition: all 0.4s ease-in-out;
+
+    &::placeholder {
+      transition: all 0.4s ease-in-out;
+    }
+
+    &::before {
+      transition: all 0.4s ease-in-out;
+    }
+
+    &::after {
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}

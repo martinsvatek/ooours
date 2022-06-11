@@ -1,0 +1,33 @@
+@import 'global/styles/Styles.module.scss';
+
+.app {
+  display: flex;
+
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  & h1,
+  & span {
+    margin: -2.4rem 0;
+
+    font-size: 8.9rem;
+  }
+
+  & h1 {
+    color: $color-peach-100;
+  }
+
+  & button {
+    margin: 0.9rem 0.52rem 0;
+  }
+}
